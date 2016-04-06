@@ -48,6 +48,9 @@ cache:
     - $HOME/.cache/pip
     - $HOME/build/The-Compiler/qutebrowser/.cache
 
+before_install:
+  - 'export PATH="/usr/bin:$PATH"'
+
 install:
   - python scripts/dev/ci/install.py
 
